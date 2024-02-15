@@ -1,0 +1,18 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock title %}</title>
+    <link rel="stylesheet" href="{% static 'user_auth/_base.css' %}">
+</head>
+<body>
+
+    <div id="navbar">User Authentication System.</div>
+
+
+
+    <script src="{% static 'user_auth/_base.js' %}"></script>
+</body>
+</html>
