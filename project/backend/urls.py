@@ -21,6 +21,7 @@ from app.views import error_404
 
 urlpatterns = [
     path('admin/', admin.site.urls),
+    path("", include("user_auth.urls", namespace="user_auth")),
 ] + [
     re_path(r"^", error_404),
 ]

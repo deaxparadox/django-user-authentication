@@ -1,0 +1,9 @@
+{% extends "user_auth/_base.html" %}
+{% block title %}User Authentication System.{% endblock title %}
+{% block body %}
+{% if user.is_authenticated %}
+    <h1>User is authenticated</h1>
+{% else %}
+    <h1>User not authenticated</h1>
+{% endif %}
+{% endblock body %}

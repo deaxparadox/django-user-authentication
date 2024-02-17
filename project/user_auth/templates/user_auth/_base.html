@@ -9,9 +9,13 @@
 </head>
 <body>
 
-    <div id="navbar">User Authentication System.</div>
+    <ul id="nav">
+        <li class="nav-item">User Authentication</li>
+        <li><a href="#">Login</a></li>
+        <li><a href="#">Register</a></li>
+    </ul>
 
-
+    {% block body %}{% endblock body %}
 
     <script src="{% static 'user_auth/_base.js' %}"></script>
 </body>
